@@ -1,0 +1,44 @@
+Shortcuts
+
+alias ..='cd ..'
+alias c='clear'
+alias ll='ls -la'
+alias grep='grep --color=auto'
+alias diff='colordiff'
+alias ipt='sudo /sbin/iptables'
+alias ping='ping -c 5'
+alias fastping='ping -c 100 -s.2'
+alias ports='netstat -tulanp'
+alias df='df -h'
+alias cpu='top -o cpu'
+alias mem='top -o rsize'
+alias gp='git pull'
+alias c='clear'
+alias ll='ls -la'
+alias grep='grep --color=auto'
+alias diff='colordiff'
+alias ipt='sudo /sbin/iptables'
+alias ping='ping -c 5'
+alias fastping='ping -c 100 -s.2'
+alias ports='netstat -tulanp'
+alias gitb='git branch'
+alias gitc='git checkout'
+alias gitp='git pull'
+alias gitpu='git push'
+alias gits='git status'
+alias gitd='git diff'
+alias gita='git add'
+alias gitco='git commit -m'
+alias dus='du -sh *' 
+
+Logs
+find . -iname '*.gz' -print0 | xargs -0 zgrep 'text'
+grep -ri 'text' . 
+
+Git
+git checkout mainline
+git merge --squash [Dev branch name]
+git commit -m "Message"
+
+Push to remote branch
+git push origin newfeature
